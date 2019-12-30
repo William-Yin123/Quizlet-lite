@@ -1,0 +1,151 @@
+:root {
+  font-size: calc(1vw + 1.5em);
+}
+@media (min-width: 35em) {
+  :root {
+    font-size: calc(1vw + 1em);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Neuton", serif;
+}
+.unofficial {
+  font-family: "Kaushan Script", sans-serif;
+  font-weight: normal;
+  cursor: default;
+  font-size: 0.5em;
+}
+header {
+  background-color: #06F;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 0.75em;
+  color: #FFF;
+  z-index: 1;
+}
+header > h3 > a {
+  color: #FFF;
+}
+main {
+  position: relative;
+  top: 3em;
+  margin-left: 5em;
+}
+h3 {
+  margin: 0;
+}
+.navbar {
+  position: fixed;
+  float: left;
+  top: 2.8em;
+  background-color: silver;
+  height: 100%;
+}
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.menu > li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.menu > li > a {
+  color: #000;
+  font-weight: bold;
+  padding: 0.5em 0.25em 0.5em 1.25em;
+  display: flex;
+}
+.menuitem:hover {
+  background-color: cyan;
+  color: #FFF;
+}
+.title {
+  color: #000;
+  margin-bottom: 0.5em;
+}
+.active {
+  background-color: blue;
+  color: #FFF !important;
+}
+.definition {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.flashcard {
+  border: 5px solid blue;
+  border-radius: 0.5em;
+  display: inline-block;
+}
+.correct {
+  background-color: #0F0;
+}
+.correct > h4 {
+  color: #060;
+}
+.correct::after {
+  content: " \2713"
+}
+.incorrect {
+  background-color: #F00;
+}
+.incorrect > h4 {
+  color: #800000;
+}
+.incorrect::after {
+  content: " \2715"
+}
+h4 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+.term {
+  margin: 0 0 0.25em 0;
+  padding: 0;
+}
+.term::after {
+  content: "";
+  display: block;
+}
+.container + .container {
+  margin-top: 1em;
+}
+.flashcard + .flashcard {
+  margin-top: 1em;
+}
+.username {
+  display: none;
+}
+.submit {
+  margin-top: 0.5em;
+  background-color: #06F;
+  color: white;
+  padding: 0.5em 1.25em 0.5em 1.25em;
+}
+.submit:hover {
+  background-color: cyan;
+  cursor: pointer;
+}
+input {
+  border-radius: 0.5em;
+  font-size: 1em;
+  font-family: "Neuton", serif;
+}
+.error {
+  color: #E60000;
+}
+.error_msg {
+  color: #C00;
+}
+.success {
+  color: #0F0;
+}
+.success_msg {
+  color: #060;
+}

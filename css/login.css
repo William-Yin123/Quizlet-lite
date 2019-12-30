@@ -1,0 +1,90 @@
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+}
+@media (min-width: 50em) {
+  :root {
+    font-size: 1em;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Neuton", serif;
+}
+header {
+  background-color: #06F;
+  color: #FFF;
+  padding: 1.25em 1.5em 1.25em 1.5em;
+}
+header h1 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #FFF;
+}
+.unofficial {
+  font-family: "Kaushan Script", sans-serif;
+  font-weight: normal;
+  cursor: default;
+  font-size: 0.5em;
+}
+main {
+  font-size: 2em;
+  margin-left: 1.25em;
+}
+.alt {
+  color: #C0C0C0;
+  font-size: 1em;
+  text-decoration: none;
+}
+.alt:link, .alt:visited, .alt:hover, .alt:active {
+  color: #C0C0C0;
+}
+.alt:hover {
+  color: #808080;
+}
+h3 {
+  margin: 0.5em 0em 0.5em 0em;
+}
+.input_field {
+  margin: 0;
+}
+.field {
+  margin: 0 0 0.5em 0;
+}
+input {
+  width: 15em;
+  height: 2em;
+  font-size: 1em;
+  border-radius: 0.5em;
+  font-family: "Neuton", serif;
+  margin-bottom: 1em;
+}
+input:focus {
+  background-color: #FFFF80
+}
+.submit {
+  color: #FFF;
+  background-color: #06F;
+  width: 5em;
+  height: 1.5em;
+}
+.submit:hover {
+  background-color: #00C;
+}
+.submit:focus {
+  background-color: #00C;
+}
+.error {
+  color: #E60000;
+}
+.success {
+  color: #0F0;
+}
+.success_msg {
+  color: #060;
+}
